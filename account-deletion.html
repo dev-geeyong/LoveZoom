@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Account and Data Deletion – LoveZoom</title>
+    <meta name="description" content="How to request account and data deletion for LoveZoom." />
+    <style>
+      :root { --fg:#0f172a; --muted:#475569; --bg:#ffffff; --link:#2563eb; }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); line-height:1.6; }
+      header { padding: 24px 16px; border-bottom: 1px solid #e5e7eb; }
+      main { max-width: 860px; margin: 0 auto; padding: 28px 16px 64px; }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      h2 { margin-top: 28px; font-size: 20px; }
+      p, li { color: var(--fg); }
+      .muted { color: var(--muted); }
+      .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; background: #fafafa; }
+      code { background:#f1f5f9; padding:2px 6px; border-radius:6px; }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .lang-note { font-size: 14px; margin-top: 6px; }
+      ul { padding-left: 20px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="max-width: 860px; margin: 0 auto;">
+        <h1>Account and Data Deletion – LoveZoom</h1>
+        <p class="muted">Developer: dev.geeyong • Contact: <a href="mailto:dev.geeyong@gmail.com">dev.geeyong@gmail.com</a></p>
+        <p class="lang-note">English required for Play Console. Korean summary is provided below.</p>
+      </div>
+    </header>
+    <main>
+      <section class="card">
+        <h2>Overview</h2>
+        <p>
+          You can delete your account and related data directly in the app. Deletion removes your
+          Firebase Authentication account and your user document stored in Firestore. Push
+          notification tokens linked to your account are invalidated.
+        </p>
+      </section>
+
+      <section>
+        <h2>How to Delete Your Account (In‑App)</h2>
+        <ol>
+          <li>Open the app and sign in.</li>
+          <li>Go to <strong>Profile</strong>.</li>
+          <li>Tap <strong>Delete Account</strong> and confirm.</li>
+        </ol>
+        <p class="muted">Note: Deletion is immediate once you confirm.</p>
+      </section>
+
+      <section>
+        <h2>Data Types Deleted</h2>
+        <ul>
+          <li>Account identifiers (email, user ID)</li>
+          <li>User profile document and app-related settings owned by the account</li>
+          <li>Push notification token associated with the account</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Retention</h2>
+        <p>
+          Deletion occurs immediately upon confirmation. Residual copies may persist temporarily
+          in provider-level backups and are removed according to the provider’s standard
+          retention schedules. We do not retain your data for other purposes.
+        </p>
+      </section>
+
+      <section>
+        <h2>Delete Without Logging In</h2>
+        <p>
+          If you cannot access the app, email <a href="mailto:dev.geeyong@gmail.com">dev.geeyong@gmail.com</a>
+          with the subject <code>Account Deletion Request</code> and include the email address used in the app.
+          We will verify ownership and process deletion.
+        </p>
+      </section>
+
+      <section>
+        <h2>Partial Data Deletion</h2>
+        <p>Not supported at this time. Please request full account deletion if needed.</p>
+      </section>
+
+      <hr style="margin: 36px 0;" />
+
+      <section>
+        <h2>[KO] 계정 및 데이터 삭제 안내 (요약)</h2>
+        <p>
+          앱 내 프로필 화면에서 <strong>계정 삭제</strong>를 선택하면, Firebase 인증 계정과 Firestore의 사용자 문서가 즉시 삭제되며
+          푸시 토큰이 무효화됩니다. 백업에 남아 있는 잔여 사본은 제공업체의 표준 보관 정책에 따라 제거됩니다.
+          앱에 접근할 수 없는 경우 <a href="mailto:dev.geeyong@gmail.com">dev.geeyong@gmail.com</a> 으로 삭제 요청 메일을 보내주세요.
+          부분 삭제는 현재 지원하지 않습니다.
+        </p>
+      </section>
+    </main>
+  </body>
+  </html>
+
